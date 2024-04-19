@@ -1,0 +1,123 @@
+.black{
+  background-color: black;
+}
+html{
+  font-size: 1.0em;
+  color-scheme: 'light dark';
+}
+
+body,.body{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.dark{
+  background: #000;
+  color: #eee;
+}
+.table{
+  background-color:#ccc;
+  width:100%
+}
+tr,td{
+  padding:1rem;
+  margin:1rem 0 1rem 0;
+  border-right:solid 1px black;
+  border-left:solid 1px black
+}
+table .text-center{
+  max-width: 15em;
+  white-space: nowrap;
+  /* overflow-x: auto; */
+}
+.cell{
+  text-align:center;
+}
+.table{
+  width: 100%;
+  overflow: scroll;
+}
+.table thead{
+  border: solid 1px #bea44b
+}
+.table tbody{
+  border: solid 1px #ce8930
+}
+.form-box{
+  margin-bottom: 1em;
+}
+.form{
+  padding: 1em;
+}
+.message{
+  color: #3f3535;
+  width: 95%;
+  min-height: 2em;
+}
+.paginator svg{
+  max-width: 2em;
+  max-height: 2em;
+}
+.paginator a{
+  padding: 1em;
+}
+.card{
+  min-height: 40rem !important;
+}
+.home{
+  color: aliceblue;
+}
+.navbar-link{
+  color: #0000eeaf !important;
+}
+.navbar-link:hover{
+  color: #006feec9 !important;
+}
+.sub-title{
+  font-size: 1.85em;
+}
+.select2-results__option,
+.select2-results__option--selectable  {
+  color: #000 !important;
+}
+.alert-custom{
+  color: aliceblue;
+  font-size: 1.3em;
+}
+.active-page{
+  color: #000;
+  text-decoration: none;
+}
+th.text-center{
+  
+
+/* Ensure content doesn't overflow the cell: */
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+/* Enable scrolling only when content exceeds width: */
+overflow-x: auto;
+
+/* Styling for the scrollbar: */
+scrollbar-width: thin;
+scrollbar-color: #ccc #f0f0f0; /* Adjust as needed */
+}
+@media screen and  (max-width:400px) {
+
+  body{
+      padding: 0.3rem;
+  }
+}
+@media screen and (min-width:401px) and (max-width:1000px) {
+  body{
+      padding: 0.7rem;
+  }
+}
+@media screen and (min-width:1001px) {
+  body{
+      padding: 1rem;
+  }
+}
