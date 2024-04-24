@@ -51,6 +51,9 @@ table .text-center{
 .form{
   padding: 1em;
 }
+.white-text{
+  color: #f0f0f0 !important;
+}
 .message{
   color: #3f3535;
   width: 95%;
@@ -105,6 +108,9 @@ overflow-x: auto;
 scrollbar-width: thin;
 scrollbar-color: #ccc #f0f0f0; /* Adjust as needed */
 }
+
+
+
 @media screen and  (max-width:400px) {
 
   body{

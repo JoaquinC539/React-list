@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import {useNavigate } from 'react-router-dom';
 import {useSelector,useDispatch} from 'react-redux'
 import { api } from '../../utils/api';
-import { setUser } from '../../stores/userActions';
+import { setUser } from '../../stores/actions/userActions';
 const RedicrectLogin=({children})=>{
     const dispatch=useDispatch();
     const isAuthenticated=useSelector(state=>state.user.isAuthenticated);

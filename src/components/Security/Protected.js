@@ -2,7 +2,7 @@ import { useEffect,  cloneElement } from "react";
 import {useNavigate} from "react-router-dom";
 import { useSelector,useDispatch} from 'react-redux';
 import { api } from "../../utils/api";
-import { setUser } from "../../stores/userActions";
+import { setUser } from "../../stores/actions/userActions";
 const Protected=({children})=>{
     const isAuthenticated=useSelector(state=>state.user.isAuthenticated)
     const dispatch=useDispatch();
@@ -35,6 +35,6 @@ const Protected=({children})=>{
             
     },[dispatch, isAuthenticated, navigate]);
     
-    return isAuthenticated?cloneElement(children):<div>Redirecting....</div>;
+    return isAuthenticated?(children):<div>Redirecting....</div>;
 }
 export default Protected;

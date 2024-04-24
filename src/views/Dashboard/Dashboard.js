@@ -1,7 +1,7 @@
 import { api } from "../../utils/api"
 import {useNavigate} from 'react-router-dom'
 import {useSelector,useDispatch} from 'react-redux';
-import { logoutUser } from "../../stores/userActions";
+import { logoutUser } from "../../stores/actions/userActions";
 const Dashboard=()=>{    
     const loading=false;
     const navigate=useNavigate();

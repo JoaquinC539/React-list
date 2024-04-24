@@ -8,6 +8,8 @@ import Dashboard from './views/Dashboard/Dashboard';
 import Protected from './components/Security/Protected';
 import RedicrectLogin from './views/Login/RedirectLogin';
 import Vendedores from './views/Vendedores/Vendedores';
+import VendedoresCreate from './views/Vendedores/VendedoresCreate';
+import VendedoresEdit from './views/Vendedores/VendedorEdit';
 
 export const LocationDisplay = () => {
   const location = useLocation()
@@ -28,8 +30,12 @@ export function App() {
    
         <Routes>
           <Route path='/'  element={<Layout/>}>
-              <Route index element={<LandPage links={links}/>} />
-              <Route path='/vendedor' element={<Protected><Vendedores /></Protected> } />
+              <Route index element={<LandPage links={links}/>} />              
+              <Route path='/vendedor' element={<Protected><Vendedores /> </Protected>} />
+              <Route path='/vendedor/create' element={<Protected><VendedoresCreate /></Protected>}/>
+              <Route path='/vendedor/:id' element={<Protected><VendedoresEdit /></Protected>}/>
+              
+              
               <Route path='/login' element={<RedicrectLogin> <Login /></RedicrectLogin> } />
               <Route path='/dashboard' element={<Protected><Dashboard /></Protected>} />
           <Route path='*' element={<NotFound />} />
